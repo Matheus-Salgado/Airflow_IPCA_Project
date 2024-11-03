@@ -1,9 +1,11 @@
 # ETL para IPCA e Preço do Boi Gordo com Airflow e Docker
 
 ## Introdução
-Este projeto implementa um processo de ETL automatizado usando Apache Airflow e Docker para coletar, transformar e enriquecer dados 
+Este projeto implementa um processo de ETL usando Apache Airflow e Docker para coletar, transformar e enriquecer dados 
 do IPCA (Índice Nacional de Preços ao Consumidor Amplo) e informações relacionadas ao preço da commodity boi gordo, obtidas a 
 partir da API do Banco Central e dos dados disponibilizados pelo CEPEA (Centro de Estudos Avançados em Economia Aplicada).
+
+Para estruturar o pipeline de forma eficiente e escalável, a arquitetura segue o padrão medallion, que é muito utilizada para dividir as transformações em camadas e manter a rastreabilidade das execuções.
 
 ## Pré-Requisitos
 
